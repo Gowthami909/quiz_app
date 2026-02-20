@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GK Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>GK Quiz App</h2>
+
+    <!-- Domain Selection -->
+    <div id="domainSection">
+        <h3>Select Domain</h3>
+        <select id="domainSelect">
+            <option value="science">Science</option>
+            <option value="history">History</option>
+            <option value="sports">Sports</option>
+        </select>
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quizSection" class="hidden">
+        <h3 id="question"></h3>
+        <div id="options"></div>
+        <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <!-- Result Section -->
+    <div id="resultSection" class="hidden">
+        <h3 id="scoreText"></h3>
+        <button onclick="restartQuiz()">Restart</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
